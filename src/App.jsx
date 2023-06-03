@@ -2,6 +2,8 @@ import React from 'react';
 import { FaCcMastercard } from 'react-icons/fa';
 import { AiOutlineMenu } from 'react-icons/ai';
 import { AiOutlineEdit } from 'react-icons/ai';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCheckCircle } from '@fortawesome/free-solid-svg-icons';
 
     
 import myImage from "./images/atm_image-removebg-preview.png";
@@ -15,9 +17,30 @@ const App = () => {
     <div style={{ display: 'flex', alignItems: 'center', marginLeft: '5rem'  }}>
     <img src={myImage} alt="My Image" style={{ maxWidth: '50px', marginRight: '1rem' }} />
     <h1><strong>AceCoin</strong>Pay</h1>
-    
+
+
+    <div style={{ display: "flex", justifyContent: "flex-end" }}>
+  <div style={{ backgroundColor: "black", color: "white", width: "30px", height: "30px", borderRadius: "5px", display: "flex", justifyContent: "center", alignItems: "center", position: "relative" , left: "260px" }}>
+    <span>0</span>
+  </div>
+  <div style={{ backgroundColor: "black", color: "white", width: "30px", height: "30px", borderRadius: "5px", display: "flex", justifyContent: "center", alignItems: "center" , position: "relative" , left: "260px" }}>
+    <span>1</span>
+  </div>
+  <h1 style={{ margin: "0 5px" , width: "5px" , position: "relative" , left: "260px"  }}>:</h1>
+  <div style={{ backgroundColor: "black", color: "white", width: "30px", height: "30px", borderRadius: "5px", display: "flex", justifyContent: "center", alignItems: "center" , position: "relative" , left: "260px" }}>
+    <span>1</span>
+  </div>
+  <div style={{ backgroundColor: "black", color: "white", width: "30px", height: "30px", borderRadius: "5px", display: "flex", justifyContent: "center", alignItems: "center" , position: "relative" , left: "260px" }}>
+    <span>9</span>
+  </div>
+</div>
+
+
+
+
 
   </div>
+  
   
 
   <br />
@@ -28,22 +51,30 @@ const App = () => {
   <div>
       <h1>
         <strong>Card Number</strong>
-        <AiOutlineEdit size={30} color="blue" style={{ marginLeft: '10px', position: "absolute", left: "600px", bottom : "530px" }} />
+        <AiOutlineEdit size={30} color="blue" style={{ marginLeft: '10px', position: "absolute", left: "600px", bottom : "530px" }} ></AiOutlineEdit>
+        
       </h1>
       <p>Enter the 16-digit card number on the card</p>
     </div>
       <br></br>
 
-      <form style={{ width: "550px" }}>
-      <div style={{ display: "flex", alignItems: "center" }}>
-        <FaCcMastercard size={50} style={{ marginRight: "10px", marginLeft: "5px" }} />
-        <input
-          type="text"
-          name="name"
-          // Add other attributes or event handlers as needed
-        />
-      </div>
-    </form>
+
+      <form style={{ width: "580px" }}>
+  <div style={{ display: "flex", alignItems: "center" }}>
+    <FaCcMastercard size={50} style={{ marginRight: "10px", marginLeft: "5px" }} />
+    <input
+      type="text"
+      name="name"
+      // Add other attributes or event handlers as needed
+    />
+    <FontAwesomeIcon icon={faCheckCircle} style={{ color: "blue", marginLeft: "10px" }} />
+  </div>
+</form>
+
+
+
+
+
 
       <div style={{ flex: 1, padding: '10px', border: '0px solid black', width: '10px' , position: 'absolute', left : "700px"}}>
         
